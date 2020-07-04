@@ -26,7 +26,7 @@ nei_baltimore_type <- NEI %>%
   summarise(balt_pm25_point = sum(Emissions)) %>% 
   ggplot(aes(x = year, y = balt_pm25_point, color = type)) +
   geom_line() + 
-  labs(x = "Year", y = "pm2.5", title = "pm2.5 emission in Baltimore City by the types of source")
+  labs(x = "Year", y = "pm2.5", title = "pm2.5 emission in the Baltimore City by the types of source")
 
 # export plot
 dev.cur()

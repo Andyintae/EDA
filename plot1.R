@@ -25,7 +25,7 @@ dev.cur()
 
 png(file = "plot1.PNG",width=480, height=480)
 plot(nei_pm25_total$year, nei_pm25_total$total_pm25, 
-     xlab = "Year", ylab = 'Total_pm2.5', main = "total pm2.5 emission in United States")
+     xlab = "Year", ylab = 'Total_pm2.5', main = "total pm2.5 emission in the United States")
 
 dev.off()
 

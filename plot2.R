@@ -26,7 +26,7 @@ dev.cur()
 
 png(file = "plot2.PNG",width=480, height=480)
 plot(nei_baltimore$year, nei_baltimore$total_pm25_balt, 
-     xlab = "Year", ylab = "pm2.5", main = "total pm2.5 emission in Baltimore City, Maryland")
+     xlab = "Year", ylab = "pm2.5", main = "total pm2.5 emission in the Baltimore City, Maryland")
 
 dev.off()
 
