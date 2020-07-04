@@ -9,14 +9,8 @@ unzip("2FNEI_data.zip")
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
-head(NEI)
-head(SCC)
-str(NEI)
-str(SCC)
 
 ## Question 4 : Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?
-
-table(SCC$EI.Sector)
 
 scc_coal <- SCC %>% 
   filter(str_detect(EI.Sector, "Coal")) %>% 

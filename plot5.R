@@ -9,15 +9,9 @@ unzip("2FNEI_data.zip")
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
-head(NEI)
-head(SCC)
-str(NEI)
-str(SCC)
 
 ## Question 5 : How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?
 
-names(SCC)
-table(SCC$Data.Category, SCC$EI.Sector)
 
 scc_onroad <- SCC %>% 
   filter(Data.Category =="Onroad") %>%

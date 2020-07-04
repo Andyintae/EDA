@@ -9,11 +9,8 @@ unzip("2FNEI_data.zip")
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
-head(NEI)
-head(SCC)
-str(NEI)
 
-## Question 2 : Have total emissions from PM2.5 decreased in the Baltimore City, Maryland from 1999 to 2008? 
+## Question 2 : Have total emissions from pm2.5 decreased in the Baltimore City, Maryland from 1999 to 2008? 
 
 # data_set
 nei_baltimore <- NEI %>% 

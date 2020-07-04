@@ -9,11 +9,6 @@ unzip("2FNEI_data.zip")
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
-head(NEI)
-head(SCC)
-str(NEI)
-str(SCC)
-
 ## Question 6 : Compare emissions from motor vehicle sources in Baltimore City 
 ##              with emissions from motor vehicle sources in Los Angeles County, California. 
 ##              Which city has seen greater changes over time in motor vehicle emissions?

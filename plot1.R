@@ -9,10 +9,6 @@ unzip("2FNEI_data.zip")
 NEI <- readRDS("summarySCC_PM25.rds")
 SCC <- readRDS("Source_Classification_Code.rds")
 
-head(NEI)
-head(SCC)
-str(NEI)
-
 ## Question 1 : Have total emissions from PM2.5 decreased in the United States from 1999 to 2008? 
 
 # data_set
@@ -29,4 +25,4 @@ plot(nei_pm25_total$year, nei_pm25_total$total_pm25,
 
 dev.off()
 
-# Answer : Yes, it was decreaed
+# Answer : Yes, it was decreased.
